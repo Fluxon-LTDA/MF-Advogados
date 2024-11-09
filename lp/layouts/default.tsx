@@ -1,4 +1,8 @@
-import { Link } from "@nextui-org/link";
+import { FaRegUserCircle } from "react-icons/fa";
+import Link from "next/link";
+import Image from "next/image";
+
+import Logo from "../public/logo.webp";
 
 import { Head } from "./head";
 
@@ -13,19 +17,32 @@ export default function DefaultLayout({
     <div className="relative flex flex-col h-screen">
       <Head />
       <Navbar />
-      <main className="container mx-auto max-w-7xl px-6 flex-grow pt-16">
-        {children}
-      </main>
-      <footer className="w-full flex items-center justify-center py-3">
-        <Link
-          isExternal
-          className="flex items-center gap-1 text-current"
-          href="https://nextui-docs-v2.vercel.app?utm_source=next-pages-template"
-          title="nextui.org homepage"
-        >
-          <span className="text-default-600">Powered by</span>
-          <p className="text-primary">NextUI</p>
-        </Link>
+      <main className="flex-grow">{children}</main>
+      <footer className="w-full flex flex-col sm:flex-row items-center justify-center sm:justify-around p-6">
+        <div className="hidden sm:flex sm:flex-row">
+          <p> MFM Advogados Associados | </p>
+          <p className="mx-2"> OAB/RS 125.562 </p>
+          <p> | Todos os direitos reservados</p>
+        </div>
+
+        <div className="flex flex-col sm:hidden items-center p-6">
+          <Image priority alt="Logo" src={Logo} width={70} />
+          <p>MFM Advogados Associados.</p>
+          <p>Todos os direitos reservados.</p>
+          <p> OAB/RS 125.562.</p>
+        </div>
+
+        <div className="flex items-center gap-4">
+          <p>Site desenvolvido por Fluxon Digital.</p>
+          <Link
+            className="flex justify-start items-center gap-1"
+            href="https://www.instagram.com/diihgoulart/"
+            target="_blank"
+            title="Instagram"
+          >
+            <FaRegUserCircle className="text-white text-xl" />
+          </Link>
+        </div>
       </footer>
     </div>
   );
