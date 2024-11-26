@@ -148,7 +148,7 @@ export default function IndexPage() {
               priority
               alt="Logo"
               className="translate-y-[-60px] sm:translate-y-[-70px] hidden"
-              height={120}
+              height={90}
               src={Logo}
               width={120}
             />
@@ -182,9 +182,9 @@ export default function IndexPage() {
         </div>
       </section> */}
 
-      <section className="container text-center bg-secondary">
+      <section className="container text-center bg-white">
         <div>
-          <h2 className="text-4xl sm:text-6xl font-extrabold text-white">
+          <h2 className="text-4xl sm:text-6xl font-extrabold text-black">
             Perguntas Comuns sobre Seus Direitos{" "}
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-6 mt-10 px-4 sm:px-16">
@@ -192,7 +192,7 @@ export default function IndexPage() {
               {faqs.slice(0, 4).map((faq, index) => (
                 <div key={index} className="mb-6">
                   <div
-                    className="p-4 bg-white text-gray-600 cursor-pointer rounded-md shadow-md hover:bg-primary"
+                    className="p-4 bg-secondary text-black cursor-pointer rounded-md shadow-md hover:bg-primary"
                     role="button"
                     tabIndex={0}
                     onClick={() => handleClick(index)}
@@ -235,7 +235,7 @@ export default function IndexPage() {
               {faqs.slice(4, 8).map((faq, index) => (
                 <div key={index + 4} className="mb-6">
                   <div
-                    className="p-4 bg-white text-gray-600 cursor-pointer rounded-md shadow-md hover:bg-primary"
+                    className="p-4 bg-secondary text-black cursor-pointer rounded-md shadow-md hover:bg-primary"
                     role="button"
                     tabIndex={0}
                     onClick={() => handleClick(index + 4)}
