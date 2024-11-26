@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .container {
-    @apply py-4;
+    @apply py-8;
 }
 h1 {
   @apply text-white text-4xl sm:text-7xl font-extrabold text-center;
