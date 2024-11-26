@@ -61,6 +61,8 @@ export const siteConfig = {
   ],
   links: {
     instagram: "https://www.instagram.com/mfm.advassociados/",
+    whatsapp: "https://wa.me/555181051658",
+    fluxon_instagram: "https://www.instagram.com/fluxon.digital/",
     github: "https://github.com/nextui-org/nextui",
     twitter: "https://twitter.com/getnextui",
     docs: "https://nextui.org",

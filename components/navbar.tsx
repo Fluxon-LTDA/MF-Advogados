@@ -24,7 +24,7 @@ export const Navbar = () => {
       <NavbarContent className="basis-1/5 sm:basis-full !justify-center sm:!justify-between">
         <NavbarBrand className="gap-3 max-w-fit">
           <NextLink className="flex justify-center items-center gap-1" href="/">
-            <Image priority alt="Logo" src={Logo} width={100} />
+            <Image priority alt="Logo" src={Logo} width={70} />
             {/* <p className="text-inherit hidden sm:block">
               MFM ADVOGADOS ASSOCIADOS
             </p> */}
