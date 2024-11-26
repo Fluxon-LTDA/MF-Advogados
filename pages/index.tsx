@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@nextui-org/button";
-import { SetStateAction, useState } from "react";
+import { useState } from "react";
 
 import Logo from "../public/logo.webp";
 
@@ -170,13 +170,13 @@ export default function IndexPage() {
         </div>
       </section>
 
-      <section className="container bg-white text-center">
+      {/* <section className="container bg-white text-center">
         <div>
           <h2 className="text-secondary">
             Atuamos nas Principais Áreas do Direito
           </h2>
         </div>
-      </section>
+      </section> */}
 
       <section className="container text-center bg-secondary">
         <div>
@@ -190,11 +190,11 @@ export default function IndexPage() {
                   <div
                     className="p-4 bg-white text-gray-600 cursor-pointer rounded-md shadow-md hover:bg-primary"
                     role="button"
-                    tabIndex={0} // Torna o elemento focável
+                    tabIndex={0}
                     onClick={() => handleClick(index)}
                     onKeyDown={(e) => {
                       if (e.key === "Enter" || e.key === " ") {
-                        handleClick(index); // Aciona o clique com Enter ou Espaço
+                        handleClick(index);
                       }
                     }}
                   >
@@ -222,7 +222,6 @@ export default function IndexPage() {
                           </p>
                         </div>
                       </div>
-                      {/* <p className="text-gray-600">{faq.answer}</p> */}
                     </div>
                   )}
                 </div>
@@ -233,11 +232,10 @@ export default function IndexPage() {
                 <div key={index + 4} className="mb-6">
                   <div
                     className="p-4 bg-white text-gray-600 cursor-pointer rounded-md shadow-md hover:bg-primary"
-                    role="button" // Informa ao leitor de tela que este elemento se comporta como um botão
-                    tabIndex={0} // Torna o elemento focável para navegação via teclado
+                    role="button"
+                    tabIndex={0}
                     onClick={() => handleClick(index + 4)}
                     onKeyDown={(e) => {
-                      // Detecta pressionamentos de tecla Enter ou Espaço
                       if (e.key === "Enter" || e.key === " ") {
                         handleClick(index + 4);
                       }
@@ -276,11 +274,11 @@ export default function IndexPage() {
         </div>
       </section>
 
-      <section className="container bg-white text-center">
+      {/* <section className="container bg-white text-center">
         <div>
           <h2 className="text-secondary">Outra seção...</h2>
         </div>
-      </section>
+      </section> */}
     </DefaultLayout>
   );
 }
