@@ -123,9 +123,9 @@ export default function IndexPage() {
     },
   ];
 
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
-  const handleClick = (index: SetStateAction<null>) => {
+  const handleClick = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
