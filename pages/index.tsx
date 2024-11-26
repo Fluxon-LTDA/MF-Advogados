@@ -158,12 +158,16 @@ export default function IndexPage() {
                 com Quem Entende
               </span>
             </h1>
-            <Link href={siteConfig.links.whatsapp} target="_blank">
+            <Link
+              className="mt-8"
+              href={siteConfig.links.whatsapp}
+              target="_blank"
+            >
               <Button
-                className="btn bg-gradient-to-tr from-secondary to-primary text-white shadow-lg max-w-80 h-16 sm:h-14 uppercase font-semibold mt-4 px-6"
+                className="btn bg-gradient-to-tr from-secondary to-primary text-white shadow-lg max-w-80 h-20 sm:h-16 text-base sm:text-lg uppercase font-semibold px-6"
                 radius="full"
               >
-                Resolva Seu Caso Hoje{" "}
+                Resolva Seu Caso Hoje!{" "}
               </Button>
             </Link>
           </div>
@@ -198,9 +202,9 @@ export default function IndexPage() {
                       }
                     }}
                   >
-                    <h4 className="text-sm sm:text-base font-semibold">
+                    <h3 className="text-sm sm:text-base font-semibold">
                       {faq.question}
-                    </h4>
+                    </h3>
                   </div>
                   {activeIndex === index && (
                     <div className="mt-4 p-4 bg-gray-100 rounded-md shadow-inner">
@@ -241,9 +245,9 @@ export default function IndexPage() {
                       }
                     }}
                   >
-                    <h4 className="text-sm sm:text-base font-semibold">
+                    <h3 className="text-sm sm:text-base font-semibold">
                       {faq.question}
-                    </h4>
+                    </h3>
                   </div>
                   {activeIndex === index + 4 && (
                     <div className="mt-4 p-4 bg-gray-100 rounded-md shadow-inner">
