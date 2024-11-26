@@ -254,9 +254,9 @@ export default function IndexPage() {
                           priority
                           alt={faq.lawyer.name}
                           className="w-16 h-16 rounded-full mr-4"
-                          height={100} // Tamanho da imagem
+                          height={100}
                           src={faq.lawyer.photo}
-                          width={100} // Tamanho da imagem
+                          width={100}
                         />
                         <div>
                           <strong className="block text-secondary text-left">
